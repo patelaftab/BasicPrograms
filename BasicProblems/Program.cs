@@ -16,7 +16,8 @@ namespace BasicProblems
                 "2: Leap Year Program\n" +
                 "3: Power Of Two \n" +
                 "4: Swap Numbers\n" +
-                "5: Vowel And Consonant\n");
+                "5: Vowel And Consonant\n" +
+                "6: Odd Even Numbers");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -37,8 +38,12 @@ namespace BasicProblems
                     swapNumbers.Swapnum();
                     break;
                 case 5:
-                    VowelAndConsonant vowelAndConsonant= new VowelAndConsonant();
+                    VowelAndConsonant vowelAndConsonant = new VowelAndConsonant();
                     vowelAndConsonant.VowelConsonant();
+                    break;
+                case 6:
+                    OddEven oddEven= new OddEven();
+                    oddEven.Checkingoddeven();
                     break;
                 default:
                     Console.WriteLine("Choose a Correct option");
