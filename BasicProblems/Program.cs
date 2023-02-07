@@ -13,10 +13,11 @@ namespace BasicProblems
             Console.WriteLine("Welcome To Basic Core Programs");
             Console.WriteLine("Choose a Option \n" +
                 "1: FlipCoin Problem\n" +
-                "2: Leap Year Program\n"+
-                "3: Power Of Two");
-            int option=Convert.ToInt32(Console.ReadLine());
-            switch(option) 
+                "2: Leap Year Program\n" +
+                "3: Power Of Two \n" +
+                "4: Swap Numbers");
+            int option = Convert.ToInt32(Console.ReadLine());
+            switch (option)
             {
                 case 1:
                     FlipCoin flipCoin = new FlipCoin();
@@ -29,6 +30,10 @@ namespace BasicProblems
                 case 3:
                     PowerOfTwo powerOfTwo = new PowerOfTwo();
                     powerOfTwo.Table();
+                    break;
+                case 4:
+                    SwapNumbers swapNumbers = new SwapNumbers();
+                    swapNumbers.Swapnum();
                     break;
                 default:
                     Console.WriteLine("Choose a Correct option");
