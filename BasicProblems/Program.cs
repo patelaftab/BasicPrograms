@@ -15,7 +15,8 @@ namespace BasicProblems
                 "1: FlipCoin Problem\n" +
                 "2: Leap Year Program\n" +
                 "3: Power Of Two \n" +
-                "4: Swap Numbers");
+                "4: Swap Numbers\n" +
+                "5: Vowel And Consonant\n");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -34,6 +35,10 @@ namespace BasicProblems
                 case 4:
                     SwapNumbers swapNumbers = new SwapNumbers();
                     swapNumbers.Swapnum();
+                    break;
+                case 5:
+                    VowelAndConsonant vowelAndConsonant= new VowelAndConsonant();
+                    vowelAndConsonant.VowelConsonant();
                     break;
                 default:
                     Console.WriteLine("Choose a Correct option");
