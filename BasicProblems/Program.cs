@@ -13,7 +13,8 @@ namespace BasicProblems
             Console.WriteLine("Welcome To Basic Core Programs");
             Console.WriteLine("Choose a Option \n" +
                 "1: FlipCoin Problem\n" +
-                "2: Leap Year Program");
+                "2: Leap Year Program\n"+
+                "3: Power Of Two");
             int option=Convert.ToInt32(Console.ReadLine());
             switch(option) 
             {
@@ -25,7 +26,10 @@ namespace BasicProblems
                     LeapYear leapYear = new LeapYear();
                     leapYear.Checkyear();
                     break;
-                   
+                case 3:
+                    PowerOfTwo powerOfTwo = new PowerOfTwo();
+                    powerOfTwo.Table();
+                    break;
                 default:
                     Console.WriteLine("Choose a Correct option");
                     break;
