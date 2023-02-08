@@ -19,7 +19,8 @@ namespace BasicProblems
                 "5: Vowel And Consonant\n" +
                 "6: Odd Even Numbers\n" +
                 "7: Harmonic Numbers\n" +
-                "8: Prime Factorization");
+                "8: Prime Factorization\n" +
+                "9: Quotient And Reminder Program\n");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -54,6 +55,10 @@ namespace BasicProblems
                 case 8:
                     PrimeFactorization primeFactorization = new PrimeFactorization();
                     primeFactorization.Primefactor();
+                    break;
+                case 9:
+                    QuotientAndReminder quotientAndReminder= new QuotientAndReminder();
+                    quotientAndReminder.Quotientremimnder();
                     break;
                 default:
                     Console.WriteLine("Choose a Correct option");
