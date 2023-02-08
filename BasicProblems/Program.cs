@@ -20,7 +20,8 @@ namespace BasicProblems
                 "6: Odd Even Numbers\n" +
                 "7: Harmonic Numbers\n" +
                 "8: Prime Factorization\n" +
-                "9: Quotient And Reminder Program\n");
+                "9: Quotient And Reminder Program\n" +
+                "10: Largest Of Three");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -45,7 +46,7 @@ namespace BasicProblems
                     vowelAndConsonant.VowelConsonant();
                     break;
                 case 6:
-                    OddEven oddEven= new OddEven();
+                    OddEven oddEven = new OddEven();
                     oddEven.Checkingoddeven();
                     break;
                 case 7:
@@ -57,8 +58,12 @@ namespace BasicProblems
                     primeFactorization.Primefactor();
                     break;
                 case 9:
-                    QuotientAndReminder quotientAndReminder= new QuotientAndReminder();
+                    QuotientAndReminder quotientAndReminder = new QuotientAndReminder();
                     quotientAndReminder.Quotientremimnder();
+                    break;
+                case 10:
+                    LargestNumber largestNumber = new LargestNumber();
+                    largestNumber.LargestAmong();
                     break;
                 default:
                     Console.WriteLine("Choose a Correct option");
