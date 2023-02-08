@@ -17,7 +17,8 @@ namespace BasicProblems
                 "3: Power Of Two \n" +
                 "4: Swap Numbers\n" +
                 "5: Vowel And Consonant\n" +
-                "6: Odd Even Numbers");
+                "6: Odd Even Numbers\n" +
+                "7: Harmonic Numbers\n");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -44,6 +45,10 @@ namespace BasicProblems
                 case 6:
                     OddEven oddEven= new OddEven();
                     oddEven.Checkingoddeven();
+                    break;
+                case 7:
+                    HarmonicNumber harmonicNumber = new HarmonicNumber();
+                    harmonicNumber.HarmonicNumbers();
                     break;
                 default:
                     Console.WriteLine("Choose a Correct option");
