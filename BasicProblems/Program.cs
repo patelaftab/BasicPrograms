@@ -18,7 +18,8 @@ namespace BasicProblems
                 "4: Swap Numbers\n" +
                 "5: Vowel And Consonant\n" +
                 "6: Odd Even Numbers\n" +
-                "7: Harmonic Numbers\n");
+                "7: Harmonic Numbers\n" +
+                "8: Prime Factorization");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -49,6 +50,10 @@ namespace BasicProblems
                 case 7:
                     HarmonicNumber harmonicNumber = new HarmonicNumber();
                     harmonicNumber.HarmonicNumbers();
+                    break;
+                case 8:
+                    PrimeFactorization primeFactorization = new PrimeFactorization();
+                    primeFactorization.Primefactor();
                     break;
                 default:
                     Console.WriteLine("Choose a Correct option");
